@@ -1,10 +1,10 @@
-#### 1.Arrow function
+#### 1. Arrow function
   + => (√)   -> (×)
   + The value of "This" in arrow function is the same with the one outside.
   + Arrow functions can't be hoisted.
   + "return" and "{}" can be omitted.
   + Arrow functions are not supported in IE and the earlier versions.
-2. Array
+#### 2. Array
   + .length isn't a readOnly prop
   + .sort: sort by <a href = "https://en.wikipedia.org/wiki/In-place_algorithm">In-place algorithm</a>
     
