@@ -113,13 +113,13 @@
     ___rejectionhandled___ & ___unhandledrejection___
     A particularly useful example: when you use Node.js, some dependency modules may have Rejected Promises that are not handled,which are printed to the console at runtime. You can capture this information in your own code and then add handlers corresponding to ___unHandledrejection___ for analysis and processing, or just to make your output cleaner.
    ```
-    window.addEventListener("unhandledrejection", event => {
-  /* 你可以在这里添加一些代码，以便检查
-     event.promise 中的 promise 和
-     event.reason 中的 rejection 原因 */
+   window.addEventListener("unhandledrejection", event => {
+   /* 你可以在这里添加一些代码，以便检查
+    event.promise 中的 promise 和
+    event.reason 中的 rejection 原因 */
 
-  event.preventDefault();
-}, false);
+    event.preventDefault();
+   }, false);
    ```
   + Promise's combination
   ___Promise.all()___ wait for all the promises
@@ -134,6 +134,4 @@
       .then(() => moreCriticalStuff())
       .catch(e => console.log("Critical failure: " + e.message));
     ```
-  +
-  
-    
+
